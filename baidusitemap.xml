@@ -3,6 +3,7 @@
 
 
     
+    
   <url>
     <loc>http://echoshiki.coding.me/2016/05/28/Ubuntu14-04%E4%B8%8B%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2pptp-vpn%EF%BC%8CVultr-VPS/</loc>
     <lastmod>2016-05-28T08:52:36.459Z</lastmod>
@@ -11,9 +12,9 @@
         <title>Ubuntu 14.04下一键部署pptp vpn，Vultr VPS</title>
         <pubTime>2016-05-28T04:40:28.000Z</pubTime>
         
-        <tag>Ubuntu</tag>
-         
         <tag>VPS</tag>
+         
+        <tag>Ubuntu</tag>
          
          
            
