@@ -234,7 +234,7 @@
               
                 
                 <a class="post-title-link" href="/2016/05/28/jQuery实现简单的点击全选以及取消的按钮/" itemprop="url">
-                  jQuery实现简单的点击全选以及取消的按钮
+                  jQuery实现猴子都能懂的点击全选以及取消的按钮
                 </a>
               
             
@@ -277,7 +277,10 @@
       
         
           
-            
+            <h4 id="引入jQuery文件"><a href="#引入jQuery文件" class="headerlink" title="引入jQuery文件"></a>引入jQuery文件</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=<span class="string">"http://libs.useso.com/js/jquery/1.7.2/jquery.min.js"</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="DOM部分"><a href="#DOM部分" class="headerlink" title="DOM部分"></a>DOM部分</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;button id=<span class="string">"allChecked"</span>&gt;全选&lt;/button&gt;</span><br><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">"checkbox"</span> name=<span class="string">"id[]"</span>&gt; 选项1</span><br><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">"checkbox"</span> name=<span class="string">"id[]"</span>&gt; 选项2</span><br><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">"checkbox"</span> name=<span class="string">"id[]"</span>&gt; 选项3</span><br></pre></td></tr></table></figure>
+<h4 id="jQuery部分"><a href="#jQuery部分" class="headerlink" title="jQuery部分"></a>jQuery部分</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$(document).ready(<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">    $(<span class="string">"#allChecked"</span>).live(<span class="string">"click"</span>,<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        $(<span class="string">"input:checkbox[name='id[]']"</span>).each(<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">               $(this).attr(<span class="string">'checked'</span>,<span class="string">'checked'</span>);</span><br><span class="line">         &#125;);</span><br><span class="line">         $(<span class="string">"#allChecked"</span>).attr(<span class="string">'id'</span>,<span class="string">'allCancel'</span>);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    $(<span class="string">"#allCancel"</span>).live(<span class="string">"click"</span>,<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        $(<span class="string">"input:checkbox[name='id[]']"</span>).each(<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">               $(this).attr(<span class="string">'checked'</span>,<span class="literal">false</span>);</span><br><span class="line">         &#125;);</span><br><span class="line">         $(<span class="string">"#allCancel"</span>).attr(<span class="string">'id'</span>,<span class="string">'allChecked'</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
           
         
       
@@ -356,7 +359,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
