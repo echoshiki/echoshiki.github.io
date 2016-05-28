@@ -85,21 +85,18 @@
 
 
 <meta name="description" content="ROOT登录：1sudo mysql -u root -p19881025;
-建立数据库与用户：12mysql&amp;gt; CREATE DATABASE wordpress;mysql&amp;gt; GRANT ALL PRIVILEGES ON wordpress.* TO echoshiki@localhost IDENTIFIED BY &quot;19881025&quot;;
-赋予该用户任何机器远程登录的权限：1m">
+建立数据库与用户：12mysql&amp;gt; CREATE DATABASE wordpress;mysql&amp;gt; GRANT ALL PRIVILEGES ON wordpress.* TO echoshiki@localhost IDENTIFIED BY &quot;19881025&quot;;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu 14.04中配置Mysql创建用户并实现远程登录">
 <meta property="og:url" content="http://echoshiki.coding.me/2016/05/28/Ubuntu-14-04中配置Mysql创建用户并实现远程登录/index.html">
 <meta property="og:site_name" content="四季屋">
 <meta property="og:description" content="ROOT登录：1sudo mysql -u root -p19881025;
-建立数据库与用户：12mysql&amp;gt; CREATE DATABASE wordpress;mysql&amp;gt; GRANT ALL PRIVILEGES ON wordpress.* TO echoshiki@localhost IDENTIFIED BY &quot;19881025&quot;;
-赋予该用户任何机器远程登录的权限：1m">
-<meta property="og:updated_time" content="2016-05-28T03:50:23.834Z">
+建立数据库与用户：12mysql&amp;gt; CREATE DATABASE wordpress;mysql&amp;gt; GRANT ALL PRIVILEGES ON wordpress.* TO echoshiki@localhost IDENTIFIED BY &quot;19881025&quot;;">
+<meta property="og:updated_time" content="2016-05-28T08:52:25.508Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu 14.04中配置Mysql创建用户并实现远程登录">
 <meta name="twitter:description" content="ROOT登录：1sudo mysql -u root -p19881025;
-建立数据库与用户：12mysql&amp;gt; CREATE DATABASE wordpress;mysql&amp;gt; GRANT ALL PRIVILEGES ON wordpress.* TO echoshiki@localhost IDENTIFIED BY &quot;19881025&quot;;
-赋予该用户任何机器远程登录的权限：1m">
+建立数据库与用户：12mysql&amp;gt; CREATE DATABASE wordpress;mysql&amp;gt; GRANT ALL PRIVILEGES ON wordpress.* TO echoshiki@localhost IDENTIFIED BY &quot;19881025&quot;;">
 
 
 
@@ -309,6 +306,7 @@
       
         <h4 id="ROOT登录："><a href="#ROOT登录：" class="headerlink" title="ROOT登录："></a>ROOT登录：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mysql -u root -p19881025;</span><br></pre></td></tr></table></figure>
 <h4 id="建立数据库与用户："><a href="#建立数据库与用户：" class="headerlink" title="建立数据库与用户："></a>建立数据库与用户：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; CREATE DATABASE wordpress;</span><br><span class="line">mysql&gt; GRANT ALL PRIVILEGES ON wordpress.* TO echoshiki@localhost IDENTIFIED BY <span class="string">"19881025"</span>;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <h4 id="赋予该用户任何机器远程登录的权限："><a href="#赋予该用户任何机器远程登录的权限：" class="headerlink" title="赋予该用户任何机器远程登录的权限："></a>赋予该用户任何机器远程登录的权限：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; GRANT ALL PRIVILEGES ON wordpress.* TO echoshiki@<span class="string">"%"</span> IDENTIFIED BY <span class="string">"19881025"</span>;</span><br></pre></td></tr></table></figure>
 <h4 id="修改mysql配置，注释点本地监听："><a href="#修改mysql配置，注释点本地监听：" class="headerlink" title="修改mysql配置，注释点本地监听："></a>修改mysql配置，注释点本地监听：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/mysql/my.cnf</span><br><span class="line"><span class="comment">#bind-address = 127.0.0.1</span></span><br></pre></td></tr></table></figure>
 <h4 id="重启服务："><a href="#重启服务：" class="headerlink" title="重启服务："></a>重启服务：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo restart mysql</span><br></pre></td></tr></table></figure>
