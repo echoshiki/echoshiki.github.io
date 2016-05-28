@@ -92,7 +92,7 @@
 <meta property="og:site_name" content="四季屋">
 <meta property="og:description" content="Mysql中“You can’t specify target table  for update in FROM clause”错误的意思是说，不能先select出同一表中的某些值，再update这个表(在同一语句中)。
 范例12345678delete from tbl where id in(        select max(id) from tbl a where EXISTS">
-<meta property="og:updated_time" content="2016-05-28T08:22:36.365Z">
+<meta property="og:updated_time" content="2016-05-28T08:50:53.596Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mysql中"You can't specify target table for update in FROM clause"错误原因">
 <meta name="twitter:description" content="Mysql中“You can’t specify target table  for update in FROM clause”错误的意思是说，不能先select出同一表中的某些值，再update这个表(在同一语句中)。
@@ -306,6 +306,7 @@
       
         <p>Mysql中“You can’t specify target table <tbl> for update in FROM clause”错误的意思是说，不能先select出同一表中的某些值，再update这个表(在同一语句中)。</tbl></p>
 <h4 id="范例"><a href="#范例" class="headerlink" title="范例"></a>范例</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">delete from tbl <span class="built_in">where</span> id <span class="keyword">in</span></span><br><span class="line">(</span><br><span class="line">        select max(id) from tbl a <span class="built_in">where</span> EXISTS</span><br><span class="line">        (</span><br><span class="line">            select 1 from tbl b <span class="built_in">where</span> a.tac=b.tac group by tac HAVING count(1)&gt;1</span><br><span class="line">        )</span><br><span class="line">        group by tac</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <h4 id="改正"><a href="#改正" class="headerlink" title="改正"></a>改正</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">delete from tbl <span class="built_in">where</span> id <span class="keyword">in</span></span><br><span class="line">(</span><br><span class="line">    select a.id from</span><br><span class="line">    (</span><br><span class="line">        select max(id) id from tbl a <span class="built_in">where</span> EXISTS</span><br><span class="line">        (</span><br><span class="line">            select 1 from tbl b <span class="built_in">where</span> a.tac=b.tac group by tac HAVING count(1)&gt;1</span><br><span class="line">        )</span><br><span class="line">        group by tac</span><br><span class="line">    ) a</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 <p>也就是说将select出的结果再通过中间表select一遍，这样就规避了错误。注意，这个问题只出现于mysql，mssql和oracle不会出现此问题。</p>
 
