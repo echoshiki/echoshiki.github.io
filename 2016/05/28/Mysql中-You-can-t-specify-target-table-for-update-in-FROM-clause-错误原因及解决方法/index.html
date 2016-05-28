@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="jQuery,checkbox," />
+  <meta name="keywords" content="Mysql," />
 
 
 
@@ -84,19 +84,19 @@
 
 
 
-<meta name="description" content="引入jQuery文件1&amp;lt;script src=&quot;http://libs.useso.com/js/jquery/1.7.2/jquery.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
-DOM部分1234&amp;lt;button id=&quot;allChecked&quot;&amp;gt;全选&amp;lt;/button&amp;gt;&amp;lt;input type=&quot;checkbox&quot; name=&quot;id[]&quot;&amp;gt; 选项1">
+<meta name="description" content="Mysql中“You can’t specify target table  for update in FROM clause”错误的意思是说，不能先select出同一表中的某些值，再update这个表(在同一语句中)。
+范例12345678delete from tbl where id in(        select max(id) from tbl a where EXISTS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jQuery实现猴子都能懂的点击全选以及取消的按钮">
-<meta property="og:url" content="http://echoshiki.coding.me/2016/05/28/jQuery实现简单的点击全选以及取消的按钮/index.html">
+<meta property="og:title" content="Mysql中"You can't specify target table for update in FROM clause"错误原因及解决方法">
+<meta property="og:url" content="http://echoshiki.coding.me/2016/05/28/Mysql中-You-can-t-specify-target-table-for-update-in-FROM-clause-错误原因及解决方法/index.html">
 <meta property="og:site_name" content="四季屋">
-<meta property="og:description" content="引入jQuery文件1&amp;lt;script src=&quot;http://libs.useso.com/js/jquery/1.7.2/jquery.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
-DOM部分1234&amp;lt;button id=&quot;allChecked&quot;&amp;gt;全选&amp;lt;/button&amp;gt;&amp;lt;input type=&quot;checkbox&quot; name=&quot;id[]&quot;&amp;gt; 选项1">
-<meta property="og:updated_time" content="2016-05-28T03:22:42.770Z">
+<meta property="og:description" content="Mysql中“You can’t specify target table  for update in FROM clause”错误的意思是说，不能先select出同一表中的某些值，再update这个表(在同一语句中)。
+范例12345678delete from tbl where id in(        select max(id) from tbl a where EXISTS">
+<meta property="og:updated_time" content="2016-05-28T04:52:11.772Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jQuery实现猴子都能懂的点击全选以及取消的按钮">
-<meta name="twitter:description" content="引入jQuery文件1&amp;lt;script src=&quot;http://libs.useso.com/js/jquery/1.7.2/jquery.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
-DOM部分1234&amp;lt;button id=&quot;allChecked&quot;&amp;gt;全选&amp;lt;/button&amp;gt;&amp;lt;input type=&quot;checkbox&quot; name=&quot;id[]&quot;&amp;gt; 选项1">
+<meta name="twitter:title" content="Mysql中"You can't specify target table for update in FROM clause"错误原因及解决方法">
+<meta name="twitter:description" content="Mysql中“You can’t specify target table  for update in FROM clause”错误的意思是说，不能先select出同一表中的某些值，再update这个表(在同一语句中)。
+范例12345678delete from tbl where id in(        select max(id) from tbl a where EXISTS">
 
 
 
@@ -114,7 +114,7 @@ DOM部分1234&amp;lt;button id=&quot;allChecked&quot;&amp;gt;全选&amp;lt;/butt
   };
 </script>
 
-  <title> jQuery实现猴子都能懂的点击全选以及取消的按钮 | 四季屋 </title>
+  <title> Mysql中"You can't specify target table for update in FROM clause"错误原因及解决方法 | 四季屋 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en,default">
@@ -257,7 +257,7 @@ DOM部分1234&amp;lt;button id=&quot;allChecked&quot;&amp;gt;全选&amp;lt;/butt
             
             
               
-                jQuery实现猴子都能懂的点击全选以及取消的按钮
+                Mysql中"You can't specify target table for update in FROM clause"错误原因及解决方法
               
             
           </h1>
@@ -269,7 +269,7 @@ DOM部分1234&amp;lt;button id=&quot;allChecked&quot;&amp;gt;全选&amp;lt;/butt
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-05-28T10:57:21+08:00" content="2016-05-28">
+            <time itemprop="dateCreated" datetime="2016-05-28T12:50:24+08:00" content="2016-05-28">
               2016-05-28
             </time>
           </span>
@@ -280,8 +280,8 @@ DOM部分1234&amp;lt;button id=&quot;allChecked&quot;&amp;gt;全选&amp;lt;/butt
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/05/28/jQuery实现简单的点击全选以及取消的按钮/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/28/jQuery实现简单的点击全选以及取消的按钮/" itemprop="commentsCount"></span>
+                <a href="/2016/05/28/Mysql中-You-can-t-specify-target-table-for-update-in-FROM-clause-错误原因及解决方法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/28/Mysql中-You-can-t-specify-target-table-for-update-in-FROM-clause-错误原因及解决方法/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -304,9 +304,10 @@ DOM部分1234&amp;lt;button id=&quot;allChecked&quot;&amp;gt;全选&amp;lt;/butt
       
 
       
-        <h4 id="引入jQuery文件"><a href="#引入jQuery文件" class="headerlink" title="引入jQuery文件"></a>引入jQuery文件</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=<span class="string">"http://libs.useso.com/js/jquery/1.7.2/jquery.min.js"</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="DOM部分"><a href="#DOM部分" class="headerlink" title="DOM部分"></a>DOM部分</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;button id=<span class="string">"allChecked"</span>&gt;全选&lt;/button&gt;</span><br><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">"checkbox"</span> name=<span class="string">"id[]"</span>&gt; 选项1</span><br><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">"checkbox"</span> name=<span class="string">"id[]"</span>&gt; 选项2</span><br><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">"checkbox"</span> name=<span class="string">"id[]"</span>&gt; 选项3</span><br></pre></td></tr></table></figure>
-<h4 id="jQuery部分"><a href="#jQuery部分" class="headerlink" title="jQuery部分"></a>jQuery部分</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$(document).ready(<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">    $(<span class="string">"#allChecked"</span>).live(<span class="string">"click"</span>,<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        $(<span class="string">"input:checkbox[name='id[]']"</span>).each(<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">               $(this).attr(<span class="string">'checked'</span>,<span class="string">'checked'</span>);</span><br><span class="line">         &#125;);</span><br><span class="line">         $(<span class="string">"#allChecked"</span>).attr(<span class="string">'id'</span>,<span class="string">'allCancel'</span>);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    $(<span class="string">"#allCancel"</span>).live(<span class="string">"click"</span>,<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        $(<span class="string">"input:checkbox[name='id[]']"</span>).each(<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">               $(this).attr(<span class="string">'checked'</span>,<span class="literal">false</span>);</span><br><span class="line">         &#125;);</span><br><span class="line">         $(<span class="string">"#allCancel"</span>).attr(<span class="string">'id'</span>,<span class="string">'allChecked'</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+        <p>Mysql中“You can’t specify target table <tbl> for update in FROM clause”错误的意思是说，不能先select出同一表中的某些值，再update这个表(在同一语句中)。</tbl></p>
+<h4 id="范例"><a href="#范例" class="headerlink" title="范例"></a>范例</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">delete from tbl <span class="built_in">where</span> id <span class="keyword">in</span></span><br><span class="line">(</span><br><span class="line">        select max(id) from tbl a <span class="built_in">where</span> EXISTS</span><br><span class="line">        (</span><br><span class="line">            select 1 from tbl b <span class="built_in">where</span> a.tac=b.tac group by tac HAVING count(1)&gt;1</span><br><span class="line">        )</span><br><span class="line">        group by tac</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<h4 id="改正"><a href="#改正" class="headerlink" title="改正"></a>改正</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">delete from tbl <span class="built_in">where</span> id <span class="keyword">in</span></span><br><span class="line">(</span><br><span class="line">    select a.id from</span><br><span class="line">    (</span><br><span class="line">        select max(id) id from tbl a <span class="built_in">where</span> EXISTS</span><br><span class="line">        (</span><br><span class="line">            select 1 from tbl b <span class="built_in">where</span> a.tac=b.tac group by tac HAVING count(1)&gt;1</span><br><span class="line">        )</span><br><span class="line">        group by tac</span><br><span class="line">    ) a</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>也就是说将select出的结果再通过中间表select一遍，这样就规避了错误。注意，这个问题只出现于mysql，mssql和oracle不会出现此问题。</p>
 
       
     </div>
@@ -328,9 +329,7 @@ DOM部分1234&amp;lt;button id=&quot;allChecked&quot;&amp;gt;全选&amp;lt;/butt
       
         <div class="post-tags">
           
-            <a href="/tags/jQuery/" rel="tag">#jQuery</a>
-          
-            <a href="/tags/checkbox/" rel="tag">#checkbox</a>
+            <a href="/tags/Mysql/" rel="tag">#Mysql</a>
           
         </div>
       
@@ -339,13 +338,13 @@ DOM部分1234&amp;lt;button id=&quot;allChecked&quot;&amp;gt;全选&amp;lt;/butt
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/05/28/将中文字符串转换成首字母组合/" rel="next" title="将中文字符串转换成首字母组合">
+                <i class="fa fa-chevron-left"></i> 将中文字符串转换成首字母组合
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/05/28/Ubuntu-14-04中配置Mysql创建用户并实现远程登录/" rel="prev" title="Ubuntu 14.04中配置Mysql创建用户并实现远程登录">
-                Ubuntu 14.04中配置Mysql创建用户并实现远程登录 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -371,8 +370,8 @@ DOM部分1234&amp;lt;button id=&quot;allChecked&quot;&amp;gt;全选&amp;lt;/butt
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/05/28/jQuery实现简单的点击全选以及取消的按钮/"
-           data-title="jQuery实现猴子都能懂的点击全选以及取消的按钮" data-url="http://echoshiki.coding.me/2016/05/28/jQuery实现简单的点击全选以及取消的按钮/">
+      <div class="ds-thread" data-thread-key="2016/05/28/Mysql中-You-can-t-specify-target-table-for-update-in-FROM-clause-错误原因及解决方法/"
+           data-title="Mysql中"You can't specify target table for update in FROM clause"错误原因及解决方法" data-url="http://echoshiki.coding.me/2016/05/28/Mysql中-You-can-t-specify-target-table-for-update-in-FROM-clause-错误原因及解决方法/">
       </div>
     
   </div>
@@ -456,7 +455,7 @@ DOM部分1234&amp;lt;button id=&quot;allChecked&quot;&amp;gt;全选&amp;lt;/butt
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#引入jQuery文件"><span class="nav-number">1.</span> <span class="nav-text">引入jQuery文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DOM部分"><span class="nav-number">2.</span> <span class="nav-text">DOM部分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#jQuery部分"><span class="nav-number">3.</span> <span class="nav-text">jQuery部分</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#范例"><span class="nav-number">1.</span> <span class="nav-text">范例</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#改正"><span class="nav-number">2.</span> <span class="nav-text">改正</span></a></li></ol></div>
             
           </div>
         </section>
