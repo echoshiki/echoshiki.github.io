@@ -4,6 +4,12 @@
   
     
     <entry>
+      <title><![CDATA[Ubuntu14.04下一键部署pptp vpn，Vultr VPS]]></title>
+      <url>http://echoshiki.coding.me/2016/05/28/Ubuntu14-04%E4%B8%8B%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2pptp-vpn%EF%BC%8CVultr-VPS/</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Ubuntu 14.04中配置Mysql创建用户并实现远程登录]]></title>
       <url>http://echoshiki.coding.me/2016/05/28/Ubuntu-14-04%E4%B8%AD%E9%85%8D%E7%BD%AEMysql%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%E5%B9%B6%E5%AE%9E%E7%8E%B0%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95/</url>
       <content type="html"><![CDATA[<h4 id="ROOT登录："><a href="#ROOT登录：" class="headerlink" title="ROOT登录："></a>ROOT登录：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mysql -u root -p19881025;</span><br></pre></td></tr></table></figure>
